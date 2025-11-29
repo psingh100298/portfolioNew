@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="intro.css" />
+  </head>
+
+  <body class="h-screen overflow-hidden flex flex-col">
+    <header class="bg-gray-900 p-3">
+      <div class="flex justify-between mx-5">
+        <div>
+          <a
+            href="/index.html"
+            class="text-white underline text-lg hover:text-xl"
+            >Home</a
+          >
+        </div>
+        <div class="flex gap-4">
+          <a
+            href="./experience/experience.html"
+            class="text-white underline text-lg hover:text-xl"
+            >Experience</a
+          >
+          <a
+            href="./education/education.html"
+            class="text-white underline text-lg hover:text-xl"
+            >Education</a
+          >
+          <a
+            href="./contact/contact.html"
+            class="text-white underline text-lg hover:text-xl"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 overflow-hidden bg-gray-100">
+      <div class="grid grid-cols-1 md:grid-cols-2 h-full bg-[url(./assets/portfolioBackground.jpg)]">
+        <div class="flex items-center justify-between overflow-hidden">
+          <img
+            src="./assets/profileImage.jpg"
+            alt="Image"
+            class="max-w-full max-h-full object-contain"
+          />
+        </div>
+
+        <div class="relative w-full flex flex-col items-center justify-center overflow-hidden p-5 intro-container">
+          <div class="flex flex-wrap text-xl p-5 intro-card">
+            Hello! I’m Pradeep Singh — a frontend developer who loves creating
+            smooth, modern, and intuitive web experiences. I enjoy working with
+            Angular and React, solving UI challenges, and turning ideas into
+            real products. Feel free to browse my portfolio to learn more about
+            what I do!
+          </div>
+          <div class="flex flex-row flex-wrap p-10 gap-5">
+            <img src="./assets/html.svg" class="w-20 h-20" alt="HTML Logo">
+            <img src="./assets/css.svg" class="w-20 h-20" alt="CSS Logo">
+            <img src="./assets/javascript.svg" class="w-20 h-20" alt="JavaScript Logo">
+            <img src="./assets/typescript.svg" class="w-20 h-20" alt="TypeScript Logo">
+            <img src="./assets/angular.svg" class="w-20 h-20" alt="Angular Logo">
+            <img src="./assets/react.svg" class="w-20 h-20" alt="React Logo">
+            <img src="./assets/github.svg" class="w-20 h-20" alt="GitHub Logo">
+            <img src="./assets/tailwindcss.svg" class="w-20 h-20" alt="Tailwind CSS Logo">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-3">
+      <div
+        class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <p class="text-lg">&copy; 2025 Your Name. All rights reserved.</p>
+
+        <div class="flex gap-4 text-lg">
+          <a
+            href="https://github.com/psingh100298"
+            target="_blank"
+            class="hover:text-white hover:text-xl"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/pradeep-singh-72367214b/"
+            target="_blank"
+            class="hover:text-white hover:text-xl"
+            >LinkedIn</a
+          >
+          <a href="mailto:psingh10021998@gmail.com" class="hover:text-white hover:text-xl"
+            >Email</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

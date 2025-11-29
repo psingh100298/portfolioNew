@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact Details</title>
+  </head>
+  <body class="h-screen overflow-hidden flex flex-col">
+    <header class="bg-gray-900 p-3">
+      <div class="flex justify-between mx-5">
+        <div>
+          <a
+            href="/index.html"
+            class="text-white underline text-lg hover:text-xl"
+            >Home</a
+          >
+        </div>
+        <div class="flex gap-4">
+          <a
+            href="../experience/experience.html"
+            class="text-white underline text-lg hover:text-xl"
+            >Experience</a
+          >
+          <a
+            href="../education/education.html"
+            class="text-white underline text-lg hover:text-xl"
+            >Education</a
+          >
+          <a
+            href="../contact/contact.html"
+            class="text-white underline text-lg hover:text-xl"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main
+      class="flex-1 justify-center justify-items-center overflow-hidden bg-gray-100"
+    >
+    <h1 class="text-3xl font-bold text-center m-8">Contact Me</h1>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-yellow-100 w-7/12 m-6 backdrop-blur-lg shadow-xl rounded-xl p-6 hover:scale-[1.02] transition duration-300"
+      >
+        <div class="flex flex-col border-r-2 border-color-black">
+          <h1 class="text-3xl m-4 p-4">Let’s Build Something Together</h1>
+          <p class="text-xl m-4 p-4">
+            If you’re looking for a frontend developer or want to discuss a
+            project, collaboration, or opportunity, feel free to reach out. I’m
+            always open to new challenges!
+          </p>
+        </div>
+
+        <div class="m-4 p-4">
+          <form action="" type="submit">
+            <div class="flex flex-col space-y-4">
+              <div class="flex justify-between">
+                <label for="name" class="">Name:</label>
+                <input
+                  type="text"
+                  placeholder=" Enter Your Name"
+                  id="name"
+                  class="w-2/3 h-10 rounded-lg bg-yellow-200"
+                />
+              </div>
+              <div class="flex justify-between">
+                <label for="contact">Mob:</label>
+                <input
+                  type="text"
+                  placeholder=" Enter Your Contact Number"
+                  id="contact"
+                  class="w-2/3 h-10 rounded-lg bg-yellow-200"
+                />
+              </div>
+              <div class="flex justify-between">
+                <label for="email">Email:</label>
+                <input
+                  type="text"
+                  placeholder=" Enter Your Email"
+                  id="email"
+                  class="w-2/3 h-10 rounded-lg bg-yellow-200"
+                />
+              </div>
+              <div class="flex justify-between">
+                <label for="textarea">Message:</label>
+                <textarea
+                  name="textare"
+                  id="textarea"
+                  placeholder="Enter your message"
+                  class="w-2/3 h-10 rounded-lg bg-yellow-200"
+                ></textarea>
+              </div>
+            </div>
+            <div class="flex justify-center m-4 p-4">
+              <button
+                type="submit"
+                class="w-full bg-blue-500 hover:bg-blue-800 rounded-lg p-2"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="https://www.linkedin.com/in/pradeep-singh-72367214b/"
+              target="_blank"
+              ><img
+                src="../assets/linkedin.svg"
+                alt="linkedin logo"
+                class="w-10 h-10"
+            /></a>
+
+            <a href="https://github.com/psingh100298" target="_blank"
+              ><img
+                src="../assets/github.svg"
+                alt="linkedin logo"
+                class="w-10 h-10"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-3">
+      <div
+        class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <p class="text-lg">&copy; 2025 Your Name. All rights reserved.</p>
+
+        <div class="flex gap-4 text-lg">
+          <a
+            href="https://github.com/psingh100298"
+            target="_blank"
+            class="hover:text-white hover:text-xl"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/pradeep-singh-72367214b/"
+            target="_blank"
+            class="hover:text-white hover:text-xl"
+            >LinkedIn</a
+          >
+          <a
+            href="mailto:psingh10021998@gmail.com"
+            class="hover:text-white hover:text-xl"
+            >Email</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
